@@ -77,7 +77,8 @@ body{
     margin-top: 10rem;
     font-size: var(--articleFontSize);
     letter-spacing: -0.02rem;
-    line-height: calc(var(--articleFontSize) * 1.65);
+    word-spacing: -0.03rem;
+    line-height: calc(var(--articleFontSize) * 1.55);
     word-break: keep-all;
     font-family: 'Noto Sans KR', Arial, Helvetica, sans-serif;
     font-weight: 400;
@@ -100,7 +101,7 @@ body{
 }
 .article_en{
     letter-spacing: -0.01rem;
-    line-height: calc(var(--articleFontSize) * 1.55);
+    line-height: calc(var(--articleFontSize) * 1.40);
 }
 .newFont{
     font-family: 'New-font';
@@ -133,10 +134,11 @@ body{
 
 @media screen and (max-width: 700px) {
     .padding{
-        padding: 2rem;
+        padding: 1rem 2rem 2rem 2rem;
     }
 
     #header{
+        margin-top: -0.5rem;
         width: calc(100% - 4rem);
         display: flex;
         align-items: center;
@@ -152,7 +154,8 @@ body{
     }
 
     #article{
-        margin-top: 10rem;
+        margin-top: 9rem;
+        line-height: calc(var(--articleFontSize) * 1.55);
     }
     .articleAside{
         display: block;
@@ -162,6 +165,10 @@ body{
     }
     .articleAside p:nth-of-type(1){
         margin-bottom: 1.3rem;
+    }
+
+    .article_en{
+        line-height: calc(var(--articleFontSize) * 1.45);
     }
 
     #footer{
